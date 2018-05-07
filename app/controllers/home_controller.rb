@@ -6,5 +6,6 @@ class HomeController < ApplicationController
   end
 
   def restaurants
+    @restaurants = Restaurant.all
   end
 end
