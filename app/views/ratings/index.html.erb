@@ -2,7 +2,7 @@
 
 <h1>Ratings</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -17,7 +17,7 @@
   <tbody>
     <% @ratings.each do |rating| %>
       <tr>
-        <td><%= rating.title %></td>
+        <td><%= link_to rating.title, rating_path(id: rating.id) %></td>
         <td><%= rating.score %></td>
         <td><%= rating.description %></td>
         <td><%= rating.restaurant_id %></td>

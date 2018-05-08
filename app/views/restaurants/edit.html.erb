@@ -1,6 +1,10 @@
-<h1>Editing Restaurant</h1>
+<div class="container create-container">
+  <div class="jumbotron">
+    <h1>Editing Restaurant</h1>
 
-<%= render 'form', restaurant: @restaurant %>
+    <%= render 'form', restaurant: @restaurant %>
 
-<%= link_to 'Show', @restaurant %> |
-<%= link_to 'Back', restaurants_path %>
+    <%= link_to 'Show', @restaurant, class: 'btn btn-primary' %> 
+    <%= link_to 'Back', restaurants_path, class: 'btn btn-secondary' %>
+  </div>
+</div>

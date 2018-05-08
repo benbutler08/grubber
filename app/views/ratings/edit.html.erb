@@ -1,6 +1,8 @@
-<h1>Editing Rating</h1>
-
-<%= render 'form', rating: @rating %>
-
-<%= link_to 'Show', @rating %> |
-<%= link_to 'Back', ratings_path %>
+<div class="jumbotron">
+  <div class="container create-container">
+    <h1>Editing Rating</h1>
+    <%= render 'form', rating: @rating %>
+    <%= link_to 'Show', @rating, class: 'btn btn-primary' %> 
+    <%= link_to 'Back', ratings_path, class: 'btn btn-secondary' %>
+  </div>
+</div>
