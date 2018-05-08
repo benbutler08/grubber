@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'wdm'
 gem 'carrierwave'
 gem 'rails', '~> 5.1.6'
 gem 'pg', '>= 0.18', '< 2.0'
@@ -25,6 +24,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'rspec-rails', '~> 3.7'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 end
 
 group :development do

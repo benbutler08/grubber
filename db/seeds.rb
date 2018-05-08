@@ -10,3 +10,17 @@ Restaurant.create(name: 'Bankers Hill', location: 'San Diego, CA')
 Restaurant.create(name: 'Eats', location: 'Providence, RI')
 Restaurant.create(name: 'Amelies', location: 'Charlotte, NC')
 Rating.create(title: 'test rating', score: 4, description: 'I went here and it was good', restaurant_id: 1, user_id: 1)
+
+99.times do |n|
+  email = "example-#{n+1}@railstutorial.org"
+  password = "password"
+  User.create!(email: email, password: password, password_confirmation: password)
+end
+
+# Following relationships
+users = User.all
+user  = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }
