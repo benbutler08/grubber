@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   end
 
   def users
+  	@restaurants = Restaurant.all
   end
 
   def restaurants
