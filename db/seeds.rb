@@ -7,9 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(email: 'ben@example.com', username: 'SuperUserBen',password: 'asdf123', password_confirmation: 'asdf123')
-Restaurant.create(name: 'Bankers Hill', location: 'San Diego, CA')
-Restaurant.create(name: 'Eats', location: 'Providence, RI')
-Restaurant.create(name: 'Amelies', location: 'Charlotte, NC')
 
 restaurant = Restaurant.create!(name: 'Bankers Hill', location: 'San Diego, CA')
 restaurant.restaurant_pic = Rails.root.join("db/images/bankers_hill.jpg").open
