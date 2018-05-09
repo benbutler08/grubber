@@ -46,8 +46,6 @@ div.card{
 .create-container{
 	margin-top: 1em;
 }
-.message-input{
-}
 form{
 	height: 100%;
 }
@@ -58,30 +56,62 @@ textarea{
 	color: #666;
 	font-size: 13px;
 	margin-right: 10px;
-	vertical-align: top
+	vertical-align: top;
+}
+.message-container {
+	margin-top: 5em;
 }
 .message-wr{
   height: 60vh;
   margin: auto;
   max-width: 80vw;
 }
+.mdl-textfield__input {
+	background: white !important;
+	border: 2px solid black !important;
+	border-radius: 2px !important;
+	padding: 2px !important;
+	margin-top: 5px !important;
+	width: 98% !important;
+}
 .messages{
   height: 87%;
   overflow: scroll;
+	background: white;
+}
+#new_message {
+	display: flex;
 }
 .chatroom-heading {
-	justify-content: center;
-	margin-top: 5px;
 	background: white;
-	padding-bottom: 5px;
+	text-align: center;
+	padding: 0;
+	background-color: #92a7b9;
 }
 .chatroom {
 	background-image: url('./i-like-food.svg');
-	height: 95vh;
+	background-color: #92a7b9;
+	height: 100vh;
 }
 .mdl-layout__container {
 	top: 0;
 }
-.page-content {
-	margin-top: 4em;
+.mdl-layout {
+	z-index: 0;
+}
+.mdl-layout__drawer {
+	z-index: 10;
+}
+#messages {
+	border: 2px solid black;
+	padding: 12px;
+	border-radius: 3px;
+}
+#send-button {
+	margin: 9px;
+	border: 2px solid black;
+}
+.heading {
+	font-size: 2em;
+	padding: .9em;
 }
