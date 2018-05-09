@@ -1,1 +1,32 @@
-<h1><%= @user.email %></h1>
+<div class="container">
+	<div class="row">
+	<div class="col">
+    <div class="card" style="max-width: 300px">
+        <%= image_tag("chris.jpg", :alt => "Card image cap", :class => "style_image") %>
+        <div class="card-body">
+        	<div class="row">
+        		<div class="col-8">
+            		<p class="card-text">Chris Tran <br> Charlotte, NC </p>
+            	</div>
+            	<div class="col-4">
+								<%= link_to following_path, class: 'btn btn-float btn-primary' do %><i class="material-icons">add</i><% end %>
+            	</div>
+            	<p class="card-text">Chris Tran <br> Charlotte, NC </p>
+            </div>
+        	</div>
+					<div class="row" id="stats">
+						<%= render 'users/stats' %>
+					</div>
+					<div class="row">
+						<%= render 'users/follow_form' if user_signed_in? %>
+					</div>
+    	</div>
+        <button type="button" class="btn btn-warning btn-lg btn-block">Who I Follow</button>
+      	<button type="button" class="btn btn-warning btn-lg btn-block">Recommended</button>
+      	<button type="button" class="btn btn-warning btn-lg btn-block">Message Me</button>
+    </div>
+	</div>
+	</div>
+	</div>
+
+<br>

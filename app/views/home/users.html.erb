@@ -14,12 +14,14 @@
             	<p class="card-text">Chris Tran <br> Charlotte, NC </p>
             </div>
         	</div>
-					<div class="row" id="stats">
-						<%= render 'layouts/stats' %>
+					<!-- These partials only work if a user is specified with @user -->
+					<!-- They are currently working in the user show pages -->
+					<!-- <div class="row" id="stats">
+						<%# render 'users/stats' %>
 					</div>
 					<div class="row">
-						<%= render 'layouts/follow_form' if user_signed_in? %>
-					</div>
+						<%# render 'users/follow_form' if user_signed_in? %>
+					</div> -->
     	</div>
     <button type="button" class="btn btn-warning btn-lg btn-block">Who I Follow</button>
 	<button type="button" class="btn btn-warning btn-lg btn-block">Recommended</button>
