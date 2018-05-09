@@ -47,16 +47,10 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
-    autoprefixer-rails (8.4.1)
-      execjs
     awesome_print (1.8.0)
     bcrypt (3.1.11)
     bcrypt (3.1.11-x86-mingw32)
     bindex (0.5.0)
-    bootstrap (4.1.1)
-      autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.9, < 2)
-      sass (>= 3.5.2)
     builder (3.2.3)
     byebug (10.0.2)
     carrierwave (1.2.2)
@@ -104,11 +98,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
-    material-sass (4.1.1)
-      autoprefixer-rails (>= 6.0.3)
-      sass (>= 3.5.2)
-    material_icons (2.2.1)
-      railties (>= 3.2)
     method_source (0.9.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -124,7 +113,6 @@ GEM
     orm_adapter (0.5.0)
     pg (1.0.0)
     pg (1.0.0-x86-mingw32)
-    popper_js (1.12.9)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -232,7 +220,6 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
-  bootstrap (~> 4.1.0)
   byebug
   carrierwave
   coffee-rails (~> 4.2)
@@ -241,8 +228,6 @@ DEPENDENCIES
   inline_svg
   jquery-rails
   listen (>= 3.0.5, < 3.2)
-  material-sass (~> 4.1.0)
-  material_icons
   pg (>= 0.18, < 2.0)
   pry
   puma (~> 3.7)

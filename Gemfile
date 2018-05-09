@@ -15,11 +15,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'devise'
 gem 'awesome_print'
-gem 'bootstrap',     '~> 4.1.0'
-gem 'material-sass', '~> 4.1.0'
-gem 'material_icons'
-gem 'jquery-rails'
 gem 'inline_svg'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
