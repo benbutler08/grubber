@@ -11,10 +11,16 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180508153040) do
 =======
 ActiveRecord::Schema.define(version: 20180508185159) do
 >>>>>>> c9761e648607c4a6cd3ba7fe68a7f4bf45049624
+=======
+
+ActiveRecord::Schema.define(version: 20180508185159) do
+
+>>>>>>> 1c32114d3d7bed18484a31387f53d8d53aaf2730
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,10 +72,14 @@ ActiveRecord::Schema.define(version: 20180508185159) do
     t.datetime "updated_at", null: false
     t.string "avatar"
 <<<<<<< HEAD
+<<<<<<< HEAD
     t.text "following"
 =======
     t.string "username"
 >>>>>>> c9761e648607c4a6cd3ba7fe68a7f4bf45049624
+=======
+    t.string "username"
+>>>>>>> 1c32114d3d7bed18484a31387f53d8d53aaf2730
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
