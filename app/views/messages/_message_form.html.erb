@@ -1,0 +1,6 @@
+<div class="message-input">
+  <%= form_for(@message, remote: true) do |f| %>
+      <%= f.text_area :content, class: 'form-control  bg-light mb-3 p-3 rounded shadow-none', autofocus: true %>
+      <%= f.submit "Send", class: 'btn btn-primary' %>
+  <% end %>
+</div>

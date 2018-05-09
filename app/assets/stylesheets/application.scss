@@ -16,37 +16,68 @@
 @import "material";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
-.style_image {
+.style_image{
 	border-radius: 100%;
 	padding: 35px;
 	max-width: 300px;
 }
 
-div.card {
+div.card{
 	background-color: #C4C4C4;
-	margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
-    font-size: 20px;
-    padding: 12px;
+	margin: 0 auto;
+	float: none;
+	margin-bottom: 10px;
+	font-size: 20px;
+	padding: 12px;
 }
 
-.col {
-	padding:30px;
+.col{
+	padding: 30px;
 }
 
-.btn.btn-secondary {
+.btn.btn-secondary{
 	color: white;
 }
-.btn.btn-primary {
+.btn.btn-primary{
 	color: white;
 }
-.btn-group-sm {
+.btn-group-sm{
 	height: 2.3em;
 }
 
-.create-container {
+.create-container{
 	margin-top: 1em;
 }
-
-
+.message-input{
+}
+form{
+	height: 100%;
+}
+textarea{
+	height: 100%;
+}
+.message-user{
+	color: #666;
+	font-size: 13px;
+	margin-right: 10px;
+	vertical-align: top
+}
+.message-wr{
+  height: 60vh;
+  margin: auto;
+  max-width: 80vw;
+}
+.messages{
+  height: 87%;
+  overflow: scroll;
+}
+.chatroom-heading {
+	justify-content: center;
+	margin-top: 5px;
+	background: white;
+	padding-bottom: 5px;
+}
+.chatroom {
+	background-image: url('./i-like-food.svg');
+	height: 95vh;
+}

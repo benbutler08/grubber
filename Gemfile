@@ -19,11 +19,13 @@ gem 'bootstrap',     '~> 4.1.0'
 gem 'material-sass', '~> 4.1.0'
 gem 'material_icons'
 gem 'jquery-rails'
+gem 'inline_svg'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'rspec-rails', '~> 3.7'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 end
 
 group :development do
