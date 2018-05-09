@@ -1,0 +1,15 @@
+<div class="chatroom">
+  <div class="row chatroom-heading">
+    <h4>
+      Main Chat
+      <small class="text-muted"><%= current_user.username %></small>
+    </h4>
+  </div>
+
+  <div class="container message-container">
+    <div class="message-wr">
+      <%= render 'messages' %>
+      <%= render 'message_form' %>
+    </div>
+  </div>
+</div>
