@@ -1,0 +1,7 @@
+<div id="messages" class="messages bg-white mb-3 p-3 rounded shadow-6">
+  <div id="messages-table" class="messages-table">
+    <% if @messages.any? %>
+      <%= render @messages %>
+    <% end %>
+  </div>
+</div>

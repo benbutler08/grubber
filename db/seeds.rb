@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create(email: 'ben@example.com', password: 'asdf123', password_confirmation: 'asdf123')
+User.create(email: 'ben@example.com', username: 'SuperUserBen',password: 'asdf123', password_confirmation: 'asdf123')
 Restaurant.create(name: 'Bankers Hill', location: 'San Diego, CA')
 Restaurant.create(name: 'Eats', location: 'Providence, RI')
 Restaurant.create(name: 'Amelies', location: 'Charlotte, NC')
@@ -14,7 +14,7 @@ Rating.create(title: 'test rating', score: 4, description: 'I went here and it w
 99.times do |n|
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
-  User.create!(email: email, password: password, password_confirmation: password)
+  User.create!(email: email, username: Faker::Name.name, password: password, password_confirmation: password)
 end
 
 # Following relationships
