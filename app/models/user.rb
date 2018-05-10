@@ -14,6 +14,8 @@ class User < ApplicationRecord
 
   has_many :messages
 
+  validates_uniqueness_of :username
+
   def follow(other_user)
     following << other_user
    end
