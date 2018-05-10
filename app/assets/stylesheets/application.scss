@@ -13,21 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
-.style_image{
-	border-radius: 100%;
-	padding: 35px;
-	max-width: 300px;
-}
-
-div.card{
-	background-color: #C4C4C4;
-	margin: 0 auto;
-	float: none;
-	margin-bottom: 10px;
-	font-size: 20px;
-	padding: 12px;
-}
+ @import 'home';
 
 .col{
 	padding: 30px;

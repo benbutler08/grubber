@@ -1,70 +1,11 @@
-<div class="row">
-  <div class="col col-lg">
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col">
     <h3>Users</h3>
-    <div class="container">
-    	<div class="row">
-    	<div class="col">
-        <% @users.each do |user| %>
-          <div class="card">
-            <div class="user-card">
-              <%= image_tag user.avatar.url, class: "card-image-top" %>
-              <div class="card-body">
-              	<div class="row">
-              		<div class="col-8">
-                  	<p class="card-text"><%= user.username %><br><%= user.city %></p>
-                  </div>
-                	<div class="col-4">
-                		<button class="btn btn-float btn-primary" type="button"><i class="material-icons">add</i></button>
-                	</div>
-              	</div>
-              </div>
-                <button type="button" class="btn btn-warning btn-lg btn-block">Who I Follow</button>
-              	<button type="button" class="btn btn-warning btn-lg btn-block">Recommended</button>
-              	<button type="button" class="btn btn-warning btn-lg btn-block">Message Me</button>
-            </div>
-          </div>
-          <br />
-        <% end %>
-    	</div>
-    	<div class="col col-md">
-        <div aria-hidden="true" class="navdrawer-right navdrawer-permanent-lg" id="navdrawerPermanent" tabindex="-1">
-          <div class="navdrawer-content">
-            <h3>Restaurants</h3>
-            <% @restaurants.each do |restaurant| %>
-              <div class="card">
-                <div class="restaurant-card">
-                  <%= image_tag restaurant.restaurant_pic.url, class: "card-img-top" %>
-                  <div class="card-body">
-                    <h5 class="card-title"><%= restaurant.name %></h5>
-                    <p class="card-text">
-                      <%= restaurant.location %>
-                      <!--  follower's ratings and reviews-->
-                    </p>
-                  </div>
-                </div>
-              </div>
-            <% end %>
-          </div>
-        </div>
-    	</div>
-    	</div>
-    </div>
-    <br>
+    <%= render 'users' %>
+  </div>
+
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--hide-phone">
+    <h3>Restaurants</h3>
+    <%= render 'restaurants' %>
   </div>
 </div>
-
-
-<!-- Wide card with share menu button -->
-<style>
-.demo-card-wide.mdl-card {
-  width: 512px;
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('../assets/demos/welcome_card.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-</style>

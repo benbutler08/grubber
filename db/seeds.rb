@@ -33,7 +33,7 @@ Rating.create(title: 'test rating', score: 4, description: 'I went here and it w
   password = "password"
   city = "Charlotte"
   user = User.create!(email: email, username: Faker::Name.name, city: city, password: password, password_confirmation: password)
-  user.avatar = Rails.root.join("db/images/blank.jpg").open
+  user.avatar = Rails.root.join("db/images/user.png").open
   user.save!
 end
 
