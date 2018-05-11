@@ -6,7 +6,7 @@
         <h5 class="card-title"><%= restaurant.name %></h5>
         <p class="card-text">
           <%= restaurant.location %><br />
-          <%= render 'home/stars' %><br />
+          <%= render 'home/stars', average_rating: restaurant.find_average_rating %><br />
           <% @ratings.each do |rating| %>
             <div class="container">
               <% if rating.restaurant_id == restaurant.id %>

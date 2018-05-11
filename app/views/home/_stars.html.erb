@@ -1,33 +1,37 @@
-<% if @average_rating == 1 %>
+<% if average_rating == 1 %>
   <i class="material-icons">star</i>
   <i class="material-icons">star_border</i>
   <i class="material-icons">star_border</i>
   <i class="material-icons">star_border</i>
   <i class="material-icons">star_border</i>
-<% elsif @average_rating == 2 %>
+<% elsif average_rating == 2 %>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star_border</i>
   <i class="material-icons">star_border</i>
   <i class="material-icons">star_border</i>
-<% elsif @average_rating == 3 %>
+<% elsif average_rating == 3 %>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star_border</i>
   <i class="material-icons">star_border</i>
-<% elsif @average_rating == 4 %>
+<% elsif average_rating == 4 %>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star_border</i>
-<% elsif @average_rating == 5 %>
+<% elsif average_rating == 5 %>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
   <i class="material-icons">star</i>
 <% else %>
-  <i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+  <i class="material-icons">star_border</i>
+  <i class="material-icons">star_border</i>
+  <i class="material-icons">star_border</i>
+  <i class="material-icons">star_border</i>
+  <i class="material-icons">star_border</i>
 <% end %>
