@@ -7,7 +7,9 @@
         <% @users.each do |user| %>
           <div class="card">
             <div class="user-card">
-              <%= image_tag user.avatar.url, class: "card-image-top" %>
+              <% if user.avatar.url %>
+                <%= image_tag user.avatar.url, class: "card-image-top" %>
+              <% end %>
               <div class="card-body">
               	<div class="row">
               		<div class="col-8">
