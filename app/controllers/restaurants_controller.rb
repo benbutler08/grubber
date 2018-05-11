@@ -6,17 +6,8 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    @average_rating = 0
-    @ratings = Rating.all
-
-    @ratings.each do |rating|
-      if rating.restaurant_id == @restaurant.id
-        @average_rating += rating.score
-      end
-    end
-
-    @average_rating /= @ratings.length
-
+    @average_rating = @restaurant.find_average_rating
+    @ratings = @restaurant.ratings
   end
 
   def new

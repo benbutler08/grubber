@@ -4,16 +4,9 @@ class HomeController < ApplicationController
     @users = User.all
     @ratings = Rating.all
 
-    @average_rating = 0
-    restaurant = params[:restaurant]
 
-    @ratings.each do |rating|
-      if rating.restaurant_id == restaurant.id
-        @average_rating += rating.score
-      end
-    end
-
-    @average_rating /= @ratings.length
+    @restaurant = Restaurant.first
+    @average_rating = @restaurant.find_average_rating
 
   end
 
