@@ -1,13 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-  <div class="card">
-    <%= image_tag @restaurant.restaurant_pic.url, class: "card-img-top" %>
-    <div class="card-body">
+  <div class="card restaurant-card">
+    <%= image_tag @restaurant.restaurant_pic.url, size: 300, class: "card-img-top" %>
+    <div class="card-body ">
       <h5 class="card-title"><%= @restaurant.name %></h5>
       <p class="card-text">
-        <%= @restaurant.location %>
-        <!--  follower's ratings and reviews-->
+        <%= @restaurant.location %><br />
+        <%= render partial: 'home/stars', locals: { :average_rating => @restaurant.find_average_rating } %><br />
+        <% @ratings.each do |rating| %>
+          <div class="container">
+            <% if rating.restaurant_id == @restaurant.id %>
+              <%= rating.title %>
+              <%= rating.score %><br />
+              <%= rating.description %><br />
+            <% end %>
+          </div>
+        <% end %>
       </p>
     </div>
   </div>

@@ -2,6 +2,12 @@ class HomeController < ApplicationController
   def feed
     @restaurants = Restaurant.all
     @users = User.all
+    @ratings = Rating.all
+
+
+    @restaurant = Restaurant.first
+    @average_rating = @restaurant.find_average_rating
+    
   end
 
   def users
@@ -16,5 +22,6 @@ class HomeController < ApplicationController
 
   def restaurants
     @restaurants = Restaurant.all
+    @ratings = Rating.all
   end
 end
