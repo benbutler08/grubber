@@ -1,7 +1,9 @@
 <% @users.each do |user| %>
   <div class="card">
     <div class="user-card">
-      <%= image_tag user.avatar.url, class: "card-image-top" %>
+      <% if user.avatar.url %>
+        <%= image_tag user.avatar.url, class: "card-image-top" %>
+      <% end %>
       <div class="card-body">
         <p class="card-text"><%= user.username %><br><%= user.city %></p>
         <button class="btn btn-float btn-primary" type="button"><i class="material-icons">add</i></button>
