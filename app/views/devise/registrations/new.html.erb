@@ -1,43 +1,81 @@
-<div class="container create-container">
-  <div class="jumbotron">
-    <h2 class="display-4">Sign up</h2>
+<ul class="mdl-list">
+  <li class="mdl-list__item mdl-list__heading">
+    <h4>Sign Up</h4>
+  </li>
 
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-      <%= devise_error_messages! %>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
 
-      <div class="form-group">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+    <li class="mdl-list__item">
+      <div class="mdl-textfield mdl-js-textfield">
+        <span class="mdl-list__item-primary-content">
+          <i class="material-icons form-icon">mail_outline</i>
+          <%= f.label :email, class: 'mdl-textfield__label' %>
+          <span class="mdl-list__item-text-body">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'mdl-textfield__input' %>
+          </span>
+        </span>
       </div>
+    </li>
 
-        <div class="form-group">
-          <%= f.label :username %><br />
-          <%= f.text_field :username, class:"form-control" %>
-        </div>
-
-      <div class="form-group">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+    <li class="mdl-list__item">
+      <div class="mdl-textfield mdl-js-textfield">
+        <span class="mdl-list__item-primary-content">
+          <i class="material-icons form-icon">face</i>
+          <%= f.label :username, class: 'mdl-textfield__label' %>
+          <span class="mdl-list__item-text-body">
+            <%= f.text_field :username, class: 'mdl-textfield__input' %>
+          </span>
+        </span>
       </div>
+    </li>
 
-      <div class="form-group">
-        <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
+    <li class="mdl-list__item">
+      <div class="mdl-textfield mdl-js-textfield">
+        <span class="mdl-list__item-primary-content">
+          <i class="material-icons form-icon">lock</i>
+          <%= f.label :password, class: 'mdl-textfield__label' %>
+          <span class="mdl-list__item-text-body">
+            <%= f.password_field :password, autocomplete: "off", class: 'mdl-textfield__input' %>
+          </span>
+        </span>
       </div>
+    </li>
 
-      <div class="form-group">
-        <%= f.label :avatar %><br />
-        <%= f.file_field :avatar %>
+    <li class="mdl-list__item">
+      <div class="mdl-textfield mdl-js-textfield">
+        <span class="mdl-list__item-primary-content">
+          <i class="material-icons form-icon">lock_open</i>
+          <%= f.label :password_confirmation, class: 'mdl-textfield__label' %>
+          <span class="mdl-list__item-text-body">
+            <%= f.password_field :password_confirmation, autocomplete: "off", class: 'mdl-textfield__input' %>
+          </span>
+        </span>
       </div>
+    </li>
 
+    <li class="mdl-list__item">
+      <div class="mdl-textfield mdl-js-textfield">
+        <span class="mdl-list__item-primary-content">
+          <i class="material-icons form-icon">perm_identity</i>
+          <%= f.label :avatar, class: 'mdl-textfield__label' %>
+          <span class="mdl-list__item-text-body">
+            <label class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="file-uploader">
+              Upload
+              <span style="display:none;">
+                <%= f.file_field :avatar, required: true %>
+              </span>
+            </label>
+          </span>
+        </span>
+      </div>
+    </li>
+
+    <li class="mdl-list__item">
       <div class="actions">
-        <%= f.submit "Sign up", class: 'btn btn-primary' %>
+        <%= f.submit "Sign up", class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--colored' %>
+        <%= render "devise/shared/links" %>
       </div>
-    <% end %>
-
-    <%= render "devise/shared/links" %>
-  </div>
-</div>
+    </li>
+  <% end %>
+</ul>

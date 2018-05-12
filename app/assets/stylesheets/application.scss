@@ -105,3 +105,23 @@ textarea{
 	font-size: 2em;
 	padding: .9em;
 }
+.mdl-textfield__input {
+	border: none !important;
+	background-color: #0000001f !important;
+	margin: 2px !important;
+	border-radius: 3px !important;
+	padding: 12px !important;
+	margin-left: .9em !important;
+}
+.mdl-textfield__label {
+	top: -5px !important;
+}
+.form-icon {
+	margin-right: 1em;
+}
+.mdl-list__heading {
+	justify-content: left;
+}
+#file-uploader {
+	margin-left: 30px;
+}
