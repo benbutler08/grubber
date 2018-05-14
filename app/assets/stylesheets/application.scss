@@ -107,7 +107,7 @@ textarea{
 }
 .mdl-textfield__input {
 	border: none !important;
-	background-color: #0000001f !important;
+	background-color: #fffdfda8 !important;
 	margin: 2px !important;
 	border-radius: 3px !important;
 	padding: 12px !important;
@@ -119,9 +119,49 @@ textarea{
 .form-icon {
 	margin-right: 1em;
 }
-.mdl-list__heading {
-	justify-content: left;
-}
 #file-uploader {
-	margin-left: 30px;
+	margin-left: 3em;
+}
+#registration-button-group {
+  margin-right: 7em;
+}
+.mdl-list__item {
+  justify-content: center;
+  padding: 10px !important;
+}
+#remember-me-box {
+  margin-right: 3em;
+}
+.mdl-layout {
+  background-color: #e5dddb;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ac9292' fill-opacity='0.15'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.mdl-list__item--two-line {
+  height: fit-content !important;
+  padding: 12px 12px;
+  text-align: center;
+}
+.mdl-list {
+  margin: 0;
+}
+.display-2 {
+  margin: 0;
+}
+.mdl-layout__drawer.is-visible {
+  background-image: url('drawer-background.jpg');
+  background-size: cover;
+}
+.mdl-navigation {
+  text-align: center;
+  padding: 0 !important;
+}
+.mdl-navigation__link {
+  color: #33356b !important;
+  font-size: 1.5em !important;
+}
+.mdl-layout-title {
+  padding: 0 !important;
+  text-align: center;
+  font-size: 2em !important;
+  color: #33356b !important;
 }

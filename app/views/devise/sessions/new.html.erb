@@ -1,7 +1,7 @@
 <ul class="mdl-list">
-
-      <div class="mdl-list__item mdl-list__heading">
-        <h4>Sign In</h4>
+      <div class="mdl-list__item--two-line">
+        <h4 class="display-2">Sign Into Grubber</h4>
+        <h5><em>Start exploring restaurants in your area</em></h5>
       </div>
 
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -30,13 +30,13 @@
       </li>
 
       <% if devise_mapping.rememberable? -%>
-      <li class="mdl-list__item">
+      <li class="mdl-list__item" id="remember-me-box">
         <%= f.check_box :remember_me%>
         <%= f.label :remember_me %>
       </li>
       <% end -%>
 
-      <li class="mdl-list__item">
+      <li class="mdl-list__item button-group">
         <%= f.submit "Log in", class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--colored'%>
         <%= render "devise/shared/links" %>
       </li>

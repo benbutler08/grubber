@@ -1,6 +1,7 @@
 <ul class="mdl-list">
-  <li class="mdl-list__item mdl-list__heading">
-    <h4>Sign Up</h4>
+  <li class="mdl-list__item--two-line">
+    <h4 class="display-2">Sign Up With Grubber</h4>
+    <h5><em>The best way to get to know restaurants in your area</em></h5>
   </li>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -71,7 +72,7 @@
       </div>
     </li>
 
-    <li class="mdl-list__item">
+    <li class="mdl-list__item" id="registration-button-group">
       <div class="actions">
         <%= f.submit "Sign up", class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--colored' %>
         <%= render "devise/shared/links" %>
