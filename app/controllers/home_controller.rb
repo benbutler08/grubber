@@ -12,6 +12,7 @@ class HomeController < ApplicationController
 
   def users
   	@restaurants = Restaurant.all
+    @users = User.all
   end
 
   def now_following
