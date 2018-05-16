@@ -6,11 +6,12 @@
       <% end %>
       <div class="card-body">
         <p class="card-text"><%= user.username %><br><%# user.city %></p>
-        <button class="btn btn-float btn-primary" type="button"><i class="material-icons">add</i></button>
+        <button class="btn btn-float btn-primary" type="button">
+          <i class="material-icons">add</i>
+        </button>
       </div>
-        <button type="button" class="btn btn-warning btn-lg btn-block">Who I Follow</button>
-        <button type="button" class="btn btn-warning btn-lg btn-block">Recommended</button>
-        <button type="button" class="btn btn-warning btn-lg btn-block">Message Me</button>
+        <%= render partial: 'users/follow_form', locals: { user: user} %>
+        <%= render partial: 'users/stats', locals: { user: user } %>
     </div>
   </div>
   <br />
