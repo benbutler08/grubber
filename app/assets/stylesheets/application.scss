@@ -162,3 +162,20 @@ textarea{
 .mdl-layout__header {
   background: linear-gradient(#ffd49f, #bde2d5);
 }
+
+
+#img1 {
+  box-shadow: 0px 0px 6px 1px #346f53;
+  border-radius: 5px;
+  align-self: center;
+}
+#img2 {
+  box-shadow: 0px 0px 6px 1px #346f53;
+  border-radius: 5px;
+  align-self: center;
+}
+#homepage-grid {
+  align-content: space-evenly;
+  justify-content: center;
+  height: 100vh;
+}
