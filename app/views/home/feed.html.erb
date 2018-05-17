@@ -1,76 +1,23 @@
 
 <div class="mdl-grid" id="homepage-grid">
   <div id="img1" class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
-      <style>
-      .mdl-card.mdl-cell {
-        justify-content: center;
-        width: 512px;
-      }
-
-      .mdl-card__title {
-        justify-content: center;
-        color: white;
-      }
-
-      .mdl-card__supporting-text {
-        color: white;
-      }
-
-      #img1 {
-        height: 350px;
-        background:
-        linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-    ),
-    url(/assets/foodpic.jpg) center / cover;
-      }
-
-      #img2 {
-        height: 350px;
-        background:
-        linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-    ),
-    url(/assets/restaurantpic.jpg) center / cover;
-      }
-
-      .mdl-card > .mdl-card__menu {
-        color: #fff;
-      }
-
-      .mdl-button {
-        font-size: 25px;
-      }
-
-      </style>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text"><%= link_to "Find a Grubber!", users_feed_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %></h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          New to the Area? Don't know where to eat? Follow your friends or influential Grubbers in your City to find the unheard Grub spots.
-        </div>
-<!--         <div class="mdl-card__actions mdl-card--border">
-           <%# link_to "Get Started", users_feed_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
-        </div> -->
-        <div class="mdl-card__menu">
-        </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text"><%= link_to "Find a Grubber!", users_feed_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-button--colored front-page-link" %></h2>
     </div>
+    <div class="mdl-card__supporting-text">
+      New to the Area? Don't know where to eat? Follow your friends or influential Grubbers in your City to find the unheard Grub spots.
+    </div>
+    <div class="mdl-card__menu">
+    </div>
+  </div>
     <div id="img2" class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text"><%= link_to "Rate a Restaurant!", restaurants_feed_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %></h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          Help out the Grubber community by rating a restaurant you love.  Share your Grubber profile to help other users decide where to eat!
-        </div>
-<!--         <div class="mdl-card__actions mdl-card--border">
-          <%# link_to "Get Started", restaurants_feed_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-            Get Started
-          </a>
-        </div> -->
-        <div class="mdl-card__menu">
-        </div>
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text"><%= link_to "Rate a Restaurant!", restaurants_feed_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-button--colored front-page-link" %></h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        Help out the Grubber community by rating a restaurant you love.  Share your Grubber profile to help other users decide where to eat!
+      </div>
+      <div class="mdl-card__menu">
+      </div>
     </div>
 </div>

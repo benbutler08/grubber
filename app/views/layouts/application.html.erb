@@ -23,11 +23,11 @@
           <span class="mdl-layout-title">Grubber</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <%= link_to 'Home', root_path, class: 'mdl-navigation__link' %>
             <% unless user_signed_in? %>
               <%= link_to "Login", new_user_session_path, class: 'mdl-navigation__link' %>
               <%= link_to "Sign Up", new_user_registration_path, class: 'mdl-navigation__link' %>
             <% else %>
+              <%= link_to 'Home', root_path, class: 'mdl-navigation__link' %>
               <%= link_to 'Chat', messages_path, class: 'mdl-navigation__link' %>
               <%= link_to 'Settings', edit_user_registration_path(id: current_user.id), class: 'mdl-navigation__link' %>
               <%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'mdl-navigation__link') %>
@@ -41,15 +41,16 @@
           <% if user_signed_in? %>
             <%= link_to "New Restaurant", new_restaurant_path, class: 'mdl-navigation__link' %>
             <%= link_to "New Rating", new_rating_path, class: 'mdl-navigation__link' %>
-          <% end %>
+
           <%= link_to 'Users' , users_feed_path, class: 'mdl-navigation__link'%>
           <%= link_to 'Restaurants' , restaurants_feed_path, class: 'mdl-navigation__link'%>
+          <% end %>
           <hr>
-          <%= link_to 'Home', root_path, class: 'mdl-navigation__link' %>
           <% unless user_signed_in? %>
             <%= link_to "Login", new_user_session_path, class: 'mdl-navigation__link' %>
             <%= link_to "Sign Up", new_user_registration_path, class: 'mdl-navigation__link' %>
           <% else %>
+            <%= link_to 'Home', root_path, class: 'mdl-navigation__link' %>
             <%= link_to 'Chat', messages_path, class: 'mdl-navigation__link' %>
             <%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'mdl-navigation__link') %>
           <% end %>

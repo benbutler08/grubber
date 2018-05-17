@@ -232,3 +232,45 @@ textarea{
 .user-card {
   box-shadow: #c3e2d0 3px 3px 5px;
 }
+.mdl-card.mdl-cell {
+  justify-content: center;
+  width: 512px;
+}
+
+.mdl-card__title {
+  justify-content: center !important;
+  color: white !important;
+}
+
+.mdl-card__supporting-text {
+  color: white !important;
+  text-align: center;
+}
+
+#img1 {
+  height: 350px;
+  background:
+  linear-gradient(
+  rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)
+),
+url(/assets/foodpic.jpg) center / cover;
+}
+
+#img2 {
+  height: 350px;
+  background:
+  linear-gradient(
+  rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)
+),
+url(/assets/restaurantpic.jpg) center / cover;
+}
+
+.mdl-card > .mdl-card__menu {
+  color: #fff;
+}
+
+.mdl-button {
+  font-size: 25px;
+}
