@@ -17,7 +17,6 @@ gem 'devise'
 gem 'awesome_print'
 gem 'inline_svg'
 gem 'jquery-rails'
-gem 'redis'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
