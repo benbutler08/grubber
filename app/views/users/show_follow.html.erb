@@ -1,9 +1,13 @@
+<br>
 <div class="container">
   <div class="row">
     <div class="user_info">
+      <% if @user.avatar.url %>
+        <%= image_tag @user.avatar.url, class: "card-image-top" %>
+      <% end %>
       <h4><%= @user.email %></h4>
       <%= link_to "view my profile", @user %>
-      <%= render 'layouts/stats' %>
+      <%= render partial: 'users/stats', locals: { user: @user } %>
     </div>
   </div>
   <br>

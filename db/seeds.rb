@@ -28,14 +28,14 @@ restaurant.save!
 
 Rating.create(title: 'test rating', score: 4, description: 'I went here and it was good', restaurant_id: 1, user_id: 1)
 
-99.times do |n|
-  email = "example-#{n+1}@railstutorial.org"
-  password = "password"
-  city = "Charlotte"
-  user = User.create!(email: email, username: Faker::Name.name, city: city, password: password, password_confirmation: password)
-  user.avatar = Rails.root.join("db/images/user.png").open
-  user.save!
-end
+# 99.times do |n|
+#   email = "example-#{n+1}@railstutorial.org"
+#   password = "password"
+#   city = "Charlotte"
+#   user = User.create!(email: email, username: Faker::Name.name, city: city, password: password, password_confirmation: password)
+#   user.avatar = Rails.root.join("db/images/user.png").open
+#   user.save!
+# end
 
 # Following relationships
 users = User.all

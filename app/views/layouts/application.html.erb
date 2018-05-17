@@ -42,11 +42,8 @@
             <%= link_to "New Restaurant", new_restaurant_path, class: 'mdl-navigation__link' %>
             <%= link_to "New Rating", new_rating_path, class: 'mdl-navigation__link' %>
           <% end %>
-          <%= link_to "Restaurants", restaurants_path, class: 'mdl-navigation__link' %>
-          <%= link_to "Ratings", ratings_path, class: 'mdl-navigation__link' %>
-          <%= link_to 'Users', users_path, class: 'mdl-navigation__link' %>
-          <%= link_to 'Users Feed' , users_feed_path, class: 'mdl-navigation__link'%>
-          <%= link_to 'Restaurants Feed' , restaurants_feed_path, class: 'mdl-navigation__link'%>
+          <%= link_to 'Users' , users_feed_path, class: 'mdl-navigation__link'%>
+          <%= link_to 'Restaurants' , restaurants_feed_path, class: 'mdl-navigation__link'%>
           <hr>
           <%= link_to 'Home', root_path, class: 'mdl-navigation__link' %>
           <% unless user_signed_in? %>
